@@ -126,6 +126,7 @@ header button span {
   height: 100%;
   width: 25%;
   padding: 20px 60px;
+  cursor: pointer;
   border-radius: 20px;
   box-shadow: 0.5px 0.5px 1.5px 1.5px #7079f7;
   display: flex;
@@ -145,6 +146,34 @@ header button span {
 }
 .Putovanja .Slike div:hover img {
   transform: scale(1.2) rotateY(180deg);
+}
+
+.Footer {
+  height: 60vh;
+  background: #0e1538;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Footer .Text {
+  display: flex;
+  margin-bottom: 100px;
+}
+.Footer .Text .Podrska, .Footer .Text .Podaci {
+  margin-left: 50px;
+}
+.Footer .Text .Podrska p, .Footer .Text .Podaci p {
+  color: #f2f2dd;
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+.Footer .Text .Podrska li, .Footer .Text .Podaci li {
+  list-style: none;
+}
+.Footer .Text .Podrska li a, .Footer .Text .Podaci li a {
+  font-size: 20px;
+  color: #f2f2dd;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
