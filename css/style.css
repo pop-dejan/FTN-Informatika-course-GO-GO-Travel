@@ -5,4 +5,146 @@
   font-family: Luxurious Roman, cursive;
 }
 
+header {
+  background: #0e1538;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+header div {
+  display: flex;
+  align-items: flex-end;
+}
+header div img {
+  height: 30px;
+}
+header div h1 {
+  font-size: 20px;
+  color: #f2f2dd;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 15px;
+  list-style: none;
+}
+header ul li:hover {
+  background: #f2f2dd;
+}
+header ul li:hover a {
+  color: #0e1538;
+}
+header ul li a {
+  color: #f2f2dd;
+  text-decoration: none;
+}
+header button {
+  padding: 5px;
+  border-radius: 20px;
+  color: #f2f2dd;
+}
+header button a {
+  color: #0e1538;
+  text-decoration: none;
+}
+header button span {
+  color: #0e1538;
+}
+
+.Datum {
+  height: 80vh;
+  background: url(../slike/background.jpeg);
+  background-size: cover;
+  padding-top: 100px;
+}
+.Datum form {
+  margin: 0 auto;
+  width: 44%;
+  height: 17%;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #f2f2dd;
+  display: flex;
+  align-items: center;
+}
+.Datum form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.Datum form div input {
+  height: 50px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 1px solid #0e1538;
+  border-radius: 20px;
+}
+.Datum form div input[type=date] {
+  color: #0e1538;
+}
+.Datum form div label {
+  color: #0e1538;
+  font-size: 12px;
+  font-weight: bold;
+}
+.Datum form button {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(241, 82, 82);
+  cursor: pointer;
+}
+.Datum form button i {
+  font-size: 10px;
+}
+
+.Putovanja {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.Putovanja h1 {
+  color: #0e1538;
+  font-size: 35px;
+  text-align: center;
+}
+.Putovanja .Slike {
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+}
+.Putovanja .Slike div {
+  height: 100%;
+  width: 25%;
+  padding: 20px 60px;
+  border-radius: 20px;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px #7079f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Putovanja .Slike div img {
+  height: 100%;
+  width: 100%;
+  transition: 0.9s transform;
+}
+.Putovanja .Slike div p {
+  margin-top: 2px;
+  color: #0e1538;
+  font-size: 18px;
+  font-weight: bold;
+}
+.Putovanja .Slike div:hover img {
+  transform: scale(1.2) rotateY(180deg);
+}
+
 /*# sourceMappingURL=style.css.map */

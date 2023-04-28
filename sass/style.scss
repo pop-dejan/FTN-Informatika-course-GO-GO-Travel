@@ -4,4 +4,200 @@
 @include main;
 
 
- 
+ header{
+
+    background: $dark_blue_color;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+
+    div{
+        display: flex;
+        align-items: flex-end;
+
+        img{
+        height: 30px;
+    }
+        h1{
+            font-size: 20px;
+            color: $yellow_color;
+        }
+    }
+    
+    ul{
+        display: flex;
+        
+
+        li{
+            
+            padding: 15px;
+            list-style: none;
+
+            &:hover {
+            
+                background: $yellow_color;
+            
+        }
+        &:hover a{
+            color: $dark_blue_color;
+        }
+            a{
+                color: $yellow_color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    button{
+        padding: 5px;
+        border-radius: 20px;
+        color: $yellow_color;
+        a{
+            color: $dark_blue_color;
+            text-decoration: none;
+        }
+        span{
+            color: $dark_blue_color;
+        }
+    }
+
+    
+
+    
+ }
+
+ .Datum{
+
+    height:80vh;
+    background: url(../slike/background.jpeg);
+    background-size: cover;
+    padding-top: 100px;
+
+    form{
+        margin: 0 auto;
+        width: 44%;
+        height: 17%;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        background: $yellow_color;
+        display: flex;
+        align-items: center;
+
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+
+        input{
+            height: 50px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border: 1px solid $dark_blue_color;
+            border-radius: 20px;
+
+            
+        }
+        input[type="date"]{
+            color: $dark_blue_color;
+        }
+
+        
+
+        label{
+            color: $dark_blue_color;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        
+
+
+    }  
+        button{
+         margin-top: 10px;
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         border: none;
+         background-color: rgb(241, 82, 82);
+         cursor: pointer;
+            i{
+                font-size: 10px;
+            }
+
+            }
+    
+    }
+
+ }
+
+ .Putovanja{
+
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    
+    h1{
+        color: $dark_blue_color;
+        font-size: 35px;
+        text-align: center;
+        
+    }
+
+    .Slike{
+    
+        height: 85%;
+        display: flex;
+        justify-content: space-around;
+
+        div{
+        
+        height: 100%;
+        width: 25%;
+        padding: 20px 60px;
+        
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 1.5px 1.5px $blue_color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            img{
+                height: 100%;
+                width: 100%;
+                transition: 0.9s transform;
+            }
+
+            p{
+                margin-top: 2px;
+                color: $dark_blue_color;
+                font-size: 18px;
+                font-weight: bold;
+                
+            }
+            
+           &:hover{
+            img{ transform: scale(1.2) rotateY(180deg);
+                
+                
+            }
+           }
+    }
+    }
+    
+
+
+
+
+
+
+
+
+
+ }
