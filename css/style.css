@@ -7,11 +7,10 @@
 
 header {
   background: #0e1538;
-  height: 5vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 20px;
 }
 header div {
   display: flex;
@@ -55,10 +54,11 @@ header button span {
 }
 
 .Datum {
-  height: 80vh;
+  height: 100%;
   background: url(../slike/background.jpeg);
   background-size: cover;
   padding-top: 100px;
+  padding-bottom: 400px;
 }
 .Datum form {
   margin: 0 auto;
@@ -190,7 +190,7 @@ header button span {
     width: 100%;
   }
   .Datum form button {
-    width: 200px;
+    width: 250px;
   }
   .Putovanja h1 {
     margin-bottom: 0;
@@ -218,6 +218,82 @@ header button span {
   .Footer iframe {
     width: 65%;
     height: 160px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    height: auto;
+  }
+  header div {
+    position: absolute;
+    top: 1em;
+    left: 25px;
+  }
+  header button {
+    position: absolute;
+    right: 2em;
+    top: 25px;
+  }
+  header ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+  }
+  header ul li {
+    width: 100%;
+  }
+  .Datum {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .Datum form {
+    width: 95%;
+    display: block;
+  }
+  .Datum form div {
+    display: block;
+    width: 100%;
+  }
+  .Datum form div input {
+    width: 100%;
+  }
+  .Datum form button {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .Putovanja h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .Putovanja .Slike div {
+    width: 95%;
+    margin-top: 5%;
+  }
+  .Footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+  .Footer .Text {
+    margin-bottom: 1%;
+    margin-top: 5%;
+  }
+  .Footer .Text .Podrska, .Footer .Text .Podaci {
+    margin-left: 20px;
+  }
+  .Footer .Text .Podrska p, .Footer .Text .Podaci p {
+    font-size: 21px;
+  }
+  .Footer .Text .Podrska li a, .Footer .Text .Podaci li a {
+    font-size: 11px;
+  }
+  .Footer iframe {
+    width: 95%;
+    height: 180px;
     margin: 0 auto;
   }
 }

@@ -7,11 +7,11 @@
  header{
 
     background: $dark_blue_color;
-    height: 5vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 20px;
+    
 
     div{
         display: flex;
@@ -70,10 +70,11 @@
 
  .Datum{
 
-    height:80vh;
+    height:100%;
     background: url(../slike/background.jpeg);
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 400px;
 
     form{
         margin: 0 auto;
@@ -241,6 +242,7 @@
     .Datum{
         form{
             width: 95%;
+            
             div{
                 width: 100%;
                 input{
@@ -249,7 +251,7 @@
 
             }
             button{
-                width: 200px;
+                width: 250px;
             }
             
                 
@@ -304,4 +306,108 @@
     }
 }
 
- 
+ @include mobile{
+
+    header{
+        height: auto;
+
+        div{
+            position: absolute;
+            top: 1em;
+            left: 25px;
+        }
+        button{
+            position: absolute;
+            right: 2em;
+            top: 25px;
+        }
+        ul{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 5em;
+            li{
+                
+                width: 100%;
+                
+            }
+        }
+
+    }
+
+    .Datum{
+
+        padding-top: 50px;
+        padding-bottom: 10px;
+        form{
+            width: 95%;
+            display: block;
+            div{
+                display: block;
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+
+            }
+            button{
+                border-radius: 20px;
+                width: 100%;
+            }
+            
+                
+        }
+    }
+
+    .Putovanja{
+        h1{
+            margin-bottom: 20px;
+            font-size: 30px;
+            
+        }
+        .Slike{
+
+            div{
+                width:95%;
+                margin-top: 5%;
+                
+            }
+        }
+    }
+
+    .Footer{
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 10%;
+
+        .Text{
+            
+            margin-bottom: 1%;
+            margin-top: 5%;
+            
+
+            .Podrska, .Podaci{
+                margin-left: 20px;
+                 p{
+                font-size: 21px;
+            }
+            li{
+                a{
+                    font-size: 11px;
+                }
+            }
+            }
+
+           
+        }
+
+        iframe{
+            width: 95%;
+            height: 180px;
+            margin: 0 auto;
+        }
+
+    }
+ }
